@@ -124,9 +124,10 @@ section .container .controls {
   bottom: 0;
   right: 0;
   display: flex;
+  margin-right: 10px;
 }
 section .container .controls li {
-  width: 80px;
+  width: 200px;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -172,6 +173,26 @@ section .container .controls li:hover {
   section .container header ul li a:hover {
     color: #f00;
   }
+  section .container header .menuIcon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: initial;
+    z-index: 10000;
+    background: #fff url(../img/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  section .container header .menuIcon.active {
+    background: #fff url(../img/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   section .container header.active ul {
     display: flex;
   }
@@ -181,5 +202,9 @@ section .container .controls li:hover {
   }
   section .container .content .bannerText div h2 {
     font-size: 3em;
+  }
+  section .container .controls li {
+    width: 100px;
+    height: 80px;
   }
 }/*# sourceMappingURL=style.css.map */

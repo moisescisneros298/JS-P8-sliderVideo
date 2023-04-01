@@ -84,6 +84,9 @@ section {
                     }
                 }
             }
+            .menuIcon {
+                display: none;
+            }
         }
         .content {
             display: flex;
@@ -131,4 +134,60 @@ section {
             }
         }
     }
+}
+
+@media (max-width:991px) {
+    section {
+        .container {
+            padding: 20px;
+            &::before {
+                width: 100%;
+            }
+            header {
+                padding: 10px 20px;
+                ul {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100vh;
+                    background: #fff;
+                    z-index: 1000;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    li {
+                        text-align: center;
+                        margin: 10px;
+                        a {
+                            color: #333;
+                            font-size: 1.5em;
+                            &:hover {
+                                color: #f00;
+    
+                            }
+                        }
+                    }
+                }
+                &.active {
+                    ul {
+                        display: flex;
+                    }
+                }
+            }
+            .content {
+                .bannerText {
+                    max-width: 100%;
+                    text-align: center;
+                    div {
+                        h2 {
+                            font-size: 3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }

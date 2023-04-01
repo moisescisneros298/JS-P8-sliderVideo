@@ -112,5 +112,23 @@ section {
                 }
             }
         }
+        .controls {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            li {
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+                cursor: pointer;
+                &:hover {
+                    background: #f5f5f5;
+                }
+            }
+        }
     }
 }

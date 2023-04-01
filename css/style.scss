@@ -85,5 +85,32 @@ section {
                 }
             }
         }
+        .content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .bannerText {
+                position: relative;
+                max-width: 700px;
+                div {
+                    display: none;
+                    transition: 0.5s ease-in-out;
+                    h2 {
+                        color: #fff;
+                        font-size: 6em;
+                        line-height: 1em;
+                        font-weight: 700;
+                    }
+                    p {
+                        color: #fff;
+                        font-size: 18px;
+                        margin: 20px 0;
+                    }
+                    &.active {
+                        display: initial;
+                    }
+                }
+            }
+        }
     }
 }
